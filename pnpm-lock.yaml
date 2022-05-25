@@ -1,10 +1,12 @@
 lockfileVersion: 5.4
 
 specifiers:
+  connect-history-api-fallback: ^1.6.0
   express: ^4.18.1
   node-fetch: '2'
 
 dependencies:
+  connect-history-api-fallback: 1.6.0
   express: 4.18.1
   node-fetch: 2.6.7
 
@@ -52,6 +54,11 @@ packages:
     dependencies:
       function-bind: 1.1.1
       get-intrinsic: 1.1.1
+    dev: false
+
+  /connect-history-api-fallback/1.6.0:
+    resolution: {integrity: sha512-e54B99q/OUoH64zYYRf3HBP5z24G38h5D3qXu23JGRoigpX5Ss4r9ZnDk3g0Z8uQC2x2lPaJ+UlWBc1ZWBWdLg==}
+    engines: {node: '>=0.8'}
     dev: false
 
   /content-disposition/0.5.4:

@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
+const history = require('connect-history-api-fallback');
 const app = express();
-
 const { getBilingualDetail } = require('./ted');
 
 app.get('/api/:id', (req, res) => {
@@ -14,9 +14,7 @@ app.get('/api/:id', (req, res) => {
     res.json(bilingual);
   });
 });
-app.get('/abc', (req, res) => {
-  res.send('fuck');
-});
+app.use(history());
 app.use(express.static(path.join(__dirname, '../dist')));
 
 module.exports = app;
