@@ -1,4 +1,5 @@
 const fetch = require('node-fetch');
+// import fetch from 'node-fetch';
 async function getTranscript(title, lang) {
   return await fetch(
     'https://www.ted.com/graphql?' +

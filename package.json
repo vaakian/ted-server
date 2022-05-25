@@ -9,13 +9,14 @@
     "serve": "node local.js"
   },
   "keywords": [],
+  "type": "commonjs",
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "node-fetch": "2"
   },
   "devDependencies": {
-    "node-fetch": "^3.2.4",
     "serverless-http": "^3.0.1"
   }
 }
