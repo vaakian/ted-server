@@ -8,9 +8,9 @@ app.get('/api/:id', (req, res) => {
   // ctx.router
   const { id } = req.params;
   getBilingualDetail(id, ['en', 'zh-cn']).then((bilingual) => {
-    if (!bilingual?.paragraphs.length) {
-      res.header('Cache-Control', 'max-age=31536000');
-    }
+    // if (!bilingual.paragraphs?.length) {
+    //   res.header('Cache-Control', 'max-age=31536000');
+    // }
     res.json(bilingual);
   });
 });
