@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "functions/index.js",
+  "scripts": {
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider && netlify-lambda serve src",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && netlify-lambda build src",
+    "serve": "node local.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "node-fetch": "^3.2.4",
+    "serverless-http": "^3.0.1"
+  }
+}
