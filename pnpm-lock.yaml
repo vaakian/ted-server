@@ -3,14 +3,10 @@ lockfileVersion: 5.4
 specifiers:
   express: ^4.18.1
   node-fetch: '2'
-  serverless-http: ^3.0.1
 
 dependencies:
   express: 4.18.1
   node-fetch: 2.6.7
-
-devDependencies:
-  serverless-http: 3.0.1
 
 packages:
 
@@ -380,11 +376,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: false
-
-  /serverless-http/3.0.1:
-    resolution: {integrity: sha512-VEgmMYXvlZ5PLkBAj2IIAGIw25RBsDnLu2fansuaFCmw2fXGUP1VGROfTaEJrjHpZrmvlPu1JRFDNRV8UvDFyw==}
-    engines: {node: '>=12.0'}
-    dev: true
 
   /setprototypeof/1.2.0:
     resolution: {integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==}
