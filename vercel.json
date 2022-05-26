@@ -18,7 +18,7 @@
     {
       "src": "/(.*)",
       "status": 404,
-      "dest": "https://ted-exporter.vercel.app/index.html"
+      "dest": "https://ted-exporter.vercel.app/"
     }
   ]
 }
