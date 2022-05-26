@@ -13,7 +13,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/$1"
+      "dest": "https://ted-exporter.vercel.app/$1"
     }
   ]
 }
