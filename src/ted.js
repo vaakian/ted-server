@@ -6,7 +6,7 @@ async function getTranscript(title, lang) {
       new URLSearchParams({
         operationName: 'Transcript',
         variables: `{"id":"${title}","language":"${lang}"}`,
-        extensions: `{"persistedQuery":{"version":1,"sha256Hash":"18f8e983b84c734317ae9388c83a13bc98702921b141c2124b3ce4aeb6c48ef6"}}`,
+        extensions: `{"persistedQuery":{"version":1,"sha256Hash":"906b90e820733c27cab3bb5de1cb4578657af4610c346b235b4ece9e89dc88bd"}}`,
       })
   ).then((res) => res.json());
 }
@@ -31,6 +31,7 @@ async function getBilingual(
       getTranscript(id, lang[0]),
       getTranscript(id, lang[1]),
     ]);
+    console.log(origin, target)
     // 有英文 但没有中文，尝试台湾
     // 第二种情况：都有，但是无法配对
     if (origin.data.translation && target.data.translation === null) {
